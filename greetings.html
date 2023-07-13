@@ -28,19 +28,19 @@ body{
 
 <script>
     var weekday = new Array(7);
-    weekday[0] = "Zondag";
-    weekday[1] = "Maandag";
-    weekday[2] = "Dinsdag";
-    weekday[3] = "Woensdag";
-    weekday[4] = "Donderdag";
-    weekday[5] = "Vrijdag";
-    weekday[6] = "Zaterdag";
+    weekday[0] = "zondag";
+    weekday[1] = "maandag";
+    weekday[2] = "dinsdag";
+    weekday[3] = "woensdag";
+    weekday[4] = "donderdag";
+    weekday[5] = "vrijdag";
+    weekday[6] = "zaterdag";
 
     
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
+    var date = dayOfWeek+" " + today.getDate() + "-" +(today.getMonth()+1) +'-'+today.getFullYear()  ;
 
     var greet;
 
